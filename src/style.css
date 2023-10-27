@@ -53,11 +53,15 @@
     
   }
   .button-style .pass{
-    margin-top: 10px;
+    font-size: 19px;
+    margin-top: -10px ;
     margin-bottom: 10px;
   }
-  .button-style .pass a{
-    font-size: 18px;
+  .button-style .pass:hover{
+    color: #25680a;
+    
+  }
+  .button-style .pass p{
     font-weight: 400;
 
   }

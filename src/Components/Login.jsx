@@ -24,6 +24,9 @@ function Login() {
   const handleRegister = () => {
     navigate('/register');
   }
+  const handleReset = () => {
+    navigate('/reset-password');
+  }
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -79,7 +82,7 @@ function Login() {
               {passwordError && <p className="error-message">{passwordError}</p>}
             </div>
             <div className="button-style">
-            <div className="pass"><a href="/password-reset">Forgot Password?</a></div>
+            <div className="pass"><p onClick={handleReset}><u >Forgot Password? </u></p></div>
             <div className='fail'>
             <Button label="Login" onClick={handleLogin} />
             <Button label="Register" onClick={handleRegister} />

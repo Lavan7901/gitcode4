@@ -1,0 +1,177 @@
+
+.App{
+  font-family: "monserrat";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    width:50%;
+    background-color: #fff;
+    padding-bottom: 40px;
+    border: 2px solid #ccc;
+}
+.container .h1{
+  align-items: center;
+  text-align: center;
+}
+.page{
+    font-family: "monserrat";
+    text-align: center;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 1, 1);
+}
+ .login-form,.register-form{
+    flex-direction: column;
+    text-align: right;
+    margin-right: 80px;
+  }
+  label{
+    color: #272727;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+    flex-direction: column;
+    text-align: right;
+  }
+  input{
+    align-items: right;
+    width: 50%;
+    margin: 0.5rem 2%;
+    padding: 8px;
+    border-radius: 0px;
+    background-color: white;
+    color: black;
+    border: 1px solid #857e7eea;
+}
+
+.button-style {
+    text-align: right;
+  }
+  
+  button {
+    font-size:14px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #0e6912;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #077933;
+  }
+.button-style a{
+  color: #000000;
+  margin-right: 10px;
+  font-size: 17px;
+}
+.button-style a:hover{
+  color: #25680a;
+}
+.error-message{
+  margin-right: 100px;
+  color: #c00b0b;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reset-form{
+  margin-left:50px;
+  margin-right:50px;
+  text-align: left;
+  flex-direction: column;
+}
+.buttonstyle1{
+  margin-right: 30%;
+  text-align: right;
+}
+.reset-form .p1{
+  font-size: 17px;
+  color: #535252;
+}
+.success-message{
+  color: #25680a;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width:100%; 
+    text-align: left;
+  }
+
+  .login-form,.register-form{
+    flex-direction: column;
+    text-align: left;
+  }
+  .button-style {
+    text-align: right;
+  }
+  .login-form .input-field label {
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .login-form .input-field input {
+    width: 100%;
+  }
+
+  .login-form .button-style {
+    margin-right: -30px;
+    text-align: right;
+    flex-direction: column;
+  }
+  .register-form .input-field label {
+    margin: 10px;
+  }
+  
+  .register-form .input-field input {
+    width: 100%;
+  }
+
+  .register-form .button-style {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media  (min-width: 1150px){
+ .login-form .button-style{
+   margin-right: 10px;
+ }
+}
+  
+@media  (max-width: 420px){
+  .login-form .button-style{
+    margin-left: 2px;
+  }
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+ }
+ @media  (min-width: 350px){
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 100px;
+  }
+}
+@media  (max-width: 414px){
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 100px;
+  }
+}
+@media (max-width:868px){
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 150px;
+  }
+}

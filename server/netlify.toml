@@ -1,4 +1,4 @@
 [[redirects]]
-from="/*"
-to="/index.html"
+from="/password-reset"
+to="/password-reset"
 status=200

@@ -110,7 +110,7 @@ function Register() {
               <Button label="REGISTER" onClick={handleSubmit} />
             </div>
             <div className="sign1">
-             <p>Already have an account?&nbsp;<a href="/">Sign In</a></p>
+             <p>Already have an account?&nbsp;<a href="/"><span>Sign In</span></a></p>
           </div>
           <ToastContainer />
           </form>

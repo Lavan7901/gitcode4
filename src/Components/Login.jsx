@@ -72,11 +72,11 @@ return (
       </div>
       {loginError && <p className="error-message1">{loginError}</p>}
       <div className="pass">
-      <p className="paragraph1">Forgot your password?&nbsp;<a href="/reset-password">Reset it</a></p></div>
+      <p className="paragraph1">Forgot your password?&nbsp;<a href="/reset-password"><span>Reset it</span></a></p></div>
       </div>
       </div>
       <div className="sign">
-        <p>New to Login? &nbsp;<a href="/register">Sign up!</a></p>
+        <p>New to Login? &nbsp;<a href="/register"><span>Sign up!</span></a></p>
       </div>
       <ToastContainer />
       </form>

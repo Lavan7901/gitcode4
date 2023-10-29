@@ -59,7 +59,7 @@ function ResetPassword() {
             <Button type="button" label="Reset Password" onClick={handleResetPassword} /> {/* Set type to "button" */}
           </div>
           <div className="sign-reset">
-           <p>Back to Login?&nbsp;<a href="/">Login</a></p>
+           <p>Back to Login?&nbsp;<a href="/"><span>Login</span></a></p>
          </div>
           <ToastContainer />
         </form>

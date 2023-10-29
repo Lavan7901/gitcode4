@@ -1,0 +1,9 @@
+.inputstyle{
+    margin: 0.5rem 5%;
+    width: 90%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 1px solid #ccc;
+}

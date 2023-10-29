@@ -1,0 +1,12 @@
+.buttonstyle{
+    font-family: "monserrat";
+    padding: 6px;
+    width: 90%;
+    font-weight: 700;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color:  #dc3545de;;
+   /* background-color: rgb(209 80 80);*/
+    color: white;
+    border: 1px ;
+}

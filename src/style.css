@@ -1,0 +1,390 @@
+
+/*.App{
+  font-family: "monserrat";
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    width:50%;
+    background-color: #fff;
+    padding-bottom: 40px;
+    border: 2px solid #ccc;
+}
+.container .h1{
+  align-items: center;
+  text-align: center;
+}
+.page{
+    font-family: "monserrat";
+    text-align: center;
+    min-height: 10vh;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 1, 1);
+}
+ .login-form,.register-form{
+    flex-direction: column;
+    text-align: right;
+    margin-right: 80px;
+  }
+  label{
+    color: #272727;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 30px;
+    flex-direction: column;
+    text-align: right;
+  }
+  input{
+    align-items: right;
+    width: 50%;
+    margin: 0.5rem 2%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border: 1px solid #857e7eea;
+}
+
+.button-style {
+    text-align: right;
+    
+  }
+  .button-style .pass{
+    font-size: 19px;
+    margin-top: -10px ;
+    margin-bottom: 10px;
+  }
+  .button-style .pass:hover{
+    color: #25680a;
+    
+  }
+  .button-style .pass p{
+    font-weight: 400;
+
+  }
+  
+  button {
+    font-size:14px;
+    font-weight: 700;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #0e6912;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #077933;
+  }
+.button-style a{
+  color: #000000;
+  margin-right: 10px;
+  font-size: 17px;
+}
+.button-style a:hover{
+  color: #25680a;
+}
+.error-message{
+  margin-right: 100px;
+  color: #c00b0b;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.reset-form{
+  margin-left:50px;
+  margin-right:50px;
+  text-align: left;
+  flex-direction: column;
+}
+.buttonstyle1{
+  margin-right: 30%;
+  text-align: right;
+}
+.reset-form .p1{
+  font-size: 17px;
+  color: #535252;
+}
+.success-message{
+  color: #25680a;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width:100%; 
+    text-align: left;
+  }
+
+  .login-form,.register-form{
+    flex-direction: column;
+    text-align: left;
+  }
+  .button-style {
+    text-align: right;
+  }
+  .login-form .input-field label {
+    margin: 10px;
+    text-align: left;
+  }
+  
+  .login-form .input-field input {
+    width: 100%;
+  }
+
+  .login-form .button-style {
+    margin-right: -30px;
+    text-align: right;
+    flex-direction: column;
+  }
+  .register-form .input-field label {
+    margin: 10px;
+  }
+  
+  .register-form .input-field input {
+    width: 100%;
+  }
+
+  .register-form .button-style {
+    margin-right: 0;
+    text-align: center;
+  }
+}
+@media  (min-width: 1150px){
+ .login-form .button-style{
+   margin-right: 10px;
+ }
+}
+  
+@media  (max-width: 420px){
+  .login-form .button-style{
+    margin-left: 2px;
+  }
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+ }
+ @media  (min-width: 350px){
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 100px;
+  }
+}
+@media  (min-width: 414px){
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 100px;
+  }
+}
+@media (max-width:868px) {
+  .login-form .button-style .pass{
+    flex-direction: column;
+    margin-left: 150px;
+  }
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic:wght@300;400;700&display=swap');
+
+.App {
+  font-family: "Didact Gothic";
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #730477,#8807b3); 
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 241, 241);
+}
+.pass-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(238, 241, 241);
+}
+.form-container h4{
+  font-family: "monserrat";
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.pass-container h4{
+  font-family: "monserrat";
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.login-form, .register-form,.reset form{
+  display: flex;
+  flex-direction: column; 
+}
+.pass{
+  margin-top: 10px;
+  margin-right: 15px;
+  text-align: right;
+  font-size: 18px;
+}
+.pass a{
+  font-family: "monserrat";
+  color: #0e96cc;
+  text-decoration: none;
+}
+.button1{
+  margin-top: 10px;
+}
+.pass .paragraph1{
+  margin-left: 15px;
+  text-align: center;
+  font-size: 17px;
+}
+.sign{
+  font-size:17px;
+  margin-top: 30px;
+  text-align: left;
+  margin-left: 20px;
+}
+.sign a{
+  font-weight: 600;
+  color: #af5409;
+}
+.error-message{
+  text-align: left;
+  margin-left: 15px;
+  color: #c00b0b;
+  font-size: 17px;
+  margin-top: -10px;
+  margin-bottom: 1px;
+}
+.error-message1{
+  text-align: center;
+  color: #c00b0b;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+.error-message3{
+  margin-left: 25px;
+  text-align: left;
+  color: #c00b0b;
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+.button2{
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 3px;
+}
+.drop-down select{
+  margin: 0.5rem 5%;
+  width: 90%;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: #646262;
+  border: 1px solid #ccc;
+}
+.drop-down option{
+  color: black;
+}
+.sign1{
+  font-size:16px;
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 15px;
+}
+.sign1 a{
+  font-weight: 600;
+  color: #af5409;
+  text-decoration: none;
+}
+.button3{
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 120px;
+}
+.sign-reset{
+  font-size:16px;
+  margin-top: 30px;
+  text-align: center;
+  margin-left: 15px;
+}
+.sign-reset a{
+  font-weight: 600;
+  color: #af5409;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 600px) {
+  .form-container {
+    width: 25%;
+    padding: 2.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  .pass-container {
+    width: 40%;
+    padding: 2.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: rgb(238, 241, 241);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .form-container {
+    width: 50%;
+    padding: 2.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+  .pass-container {
+    width: 50%;
+    padding: 2.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .form-container {
+    width: 80%;
+    margin: 100%;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 1rem;
+    margin-bottom: 80%;
+  }
+  .pass-container {
+    width: 80%;
+    margin: 100%;
+    padding: 2.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    margin:1rem;
+    margin-bottom: 80%;
+  }
+ .button3{
+    width: 60%;
+    margin-top: 10px;
+    margin-left: 60px;
+  }
+}
+ 
+.link-btn {
+  background: none;
+  color: white;
+  text-decoration: underline;
+}

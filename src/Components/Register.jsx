@@ -13,6 +13,7 @@ function Register() {
   const [emailError, setEmailError] = useState('');
   const [selectedGender, setSelectedGender] = useState('');
   const [allFieldsEmptyError, setAllFieldsEmptyError] = useState(false);
+  const [agreedToTerms, setAgreedToTerms] = useState(false);
 
   const validateEmail = (email) => {
     return email.endsWith('@gmail.com');
@@ -37,6 +38,9 @@ function Register() {
   const handleGenderChange = (event) => {
     setSelectedGender(event.target.value);
   }; 
+  const handleTermsChange = () => {
+    setAgreedToTerms(!agreedToTerms);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -106,6 +110,18 @@ function Register() {
            </select>
            {allFieldsEmptyError && !selectedGender && <p className="error-message">This field is required</p>}
          </div>
+         <div className="input-field">
+            <input
+              type="checkbox"
+              checked={agreedToTerms}
+              onChange={handleTermsChange}
+            />
+            <label htmlFor="termsCheckbox">&nbsp;I agree to Terms and Conditions</label>
+          </div>
+          
+          {allFieldsEmptyError && !agreedToTerms && (
+            <p className="error-message2">You must agree to Terms and Conditions</p>
+          )}
             <div className="button2">
               <Button label="REGISTER" onClick={handleSubmit} />
             </div>
